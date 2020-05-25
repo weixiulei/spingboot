@@ -29,6 +29,31 @@ public class LoginController {
         }
     }
 
+    @RequestMapping(value = "/user/query",method = RequestMethod.POST)
+    public String queryUser(String name,String password){
+        UserBean userBean = userService.loginIn(name,password);
+        if(userBean!=null){
+            return "success";
+        }else {
+            return "error";
+        }
+    }
+
+    /**
+     * 修改用户信息
+     * @param name
+     * @param password
+     * @return
+     */
+    @RequestMapping(value = "/user/update",method = RequestMethod.POST)
+    public String updateUser(String name,String password){
+        UserBean userBean = userService.loginIn(name,password);
+        if(userBean!=null){
+            return "success";
+        }else {
+            return "error";
+        }
+    }
 
 
 }
