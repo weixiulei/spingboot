@@ -55,5 +55,19 @@ public class LoginController {
         }
     }
 
-
+    /**
+     * 保存用户信息
+     * @param name
+     * @param password
+     * @return
+     */
+    @RequestMapping(value = "user/insert",method = RequestMethod.POST)
+    public String insertUser(String name ,String password){
+        UserBean userBean = userService.loginIn(name,password);
+        if(userBean!=null){
+            return "success";
+        }else {
+            return "error";
+        }
+    }
 }
