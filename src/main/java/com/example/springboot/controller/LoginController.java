@@ -56,7 +56,7 @@ public class LoginController {
     }
 
     /**
-     * 保存用户信息
+     * 保存用户信息(wxl)
      * @param name
      * @param password
      * @return
