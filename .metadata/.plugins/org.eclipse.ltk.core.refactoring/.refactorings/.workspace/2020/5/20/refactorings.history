@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;myTest&apos;" deleteContents="true" description="Delete resource &apos;myTest&apos;" element1="/myTest" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1589162801230"/>&#x0A;<refactoring comment="Delete resource &apos;lyons.eaby.new/WebRoot/sql/.gitignore&apos;" deleteContents="false" description="Delete resource &apos;lyons.eaby.new/WebRoot/sql/.gitignore&apos;" element1="/lyons.eaby.new/WebRoot/sql/.gitignore" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1589265603321"/>
+</session>

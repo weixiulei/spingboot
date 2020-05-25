@@ -1,0 +1,34 @@
+package myTest;
+
+public class Test {
+//新加注释--2
+	public static void main(String[] args) {
+		MyThread my = new MyThread();
+//		my.start();
+		new Thread(new MyThread1()).start();
+		
+	}
+	static class MyThread extends Thread{
+		private int num = 4 ;
+		public void run() {
+			while(true) {
+				System.out.println(num--);
+				if (num<0) {
+					break;
+				}
+			}
+		}
+	}
+	static class MyThread1 implements Runnable {
+		private int num = 4 ;
+		@Override
+		public void run() {
+			while(true) {
+				System.out.println(num--);
+				if (num<0) {
+					break;
+				}
+			}
+		}
+	}
+}
